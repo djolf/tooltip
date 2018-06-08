@@ -1,0 +1,74 @@
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn {
+    box-shadow: none;
+    background-color: lightskyblue;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+}
+
+.dummy {
+    height: 300px;
+    width: 300px;
+    background-color: orange;
+}
+
+/* .tooltip {
+    border: 1px solid black;
+    background-color: peachpuff;
+    padding: 10px;
+    border-radius: 4px;
+}
+.tooltip-arrow {
+    border: 1px solid black;
+} */
+/*  */
+.tippy-tooltip.mom-theme {
+	position: relative;
+    background: white;
+    color: #333;
+    border: 2px solid #333;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 0 0px 6px 0px rgba(0, 0, 0, 0.6);
+    font-size:0.875rem;
+    font: 1em / 1.5 "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-rendering: optimizeLegibility;
+}
+.tippy-tooltip:after, .tippy-tooltip:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+    pointer-events: none;
+    /* transform: translateY(-13px); */
+}
+
+.tippy-tooltip:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-top-color: white;
+	border-width: 9px;
+    margin-left: -9px;
+    /* transform: translateY(-13px); */
+}
+.tippy-tooltip:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-top-color: black;
+	border-width: 12px;
+    margin-left: -12px;
+    /* transform: translateY(-13px); */
+}
+
+.tippy-tooltip.mom-theme .tippy-backdrop {
+    background: white;
+}
